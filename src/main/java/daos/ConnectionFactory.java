@@ -1,3 +1,5 @@
+package daos;
+
 import com.mysql.jdbc.Driver;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -10,9 +12,9 @@ import java.sql.SQLException;
  */
 public class ConnectionFactory {
 
-    public static final String URL = "jdbc:mysql://localhost:3306/testdb";
-    public static final String USER = "testuser";
-    public static final String PASS = "testpass";
+    public static final String URL = "jdbc:mysql://localhost:3306/car";
+    public static final String USER = "root";
+    public static final String PASS = "zipcode0";
 
     /**
      * Get a connection to database
@@ -31,8 +33,8 @@ public class ConnectionFactory {
     /**
      * Test Connection
      */
-    public static void main(String[] args) {
-        Connection connection = ConnectionFactory.getConnection();
-    }
+    // public static void main(String[] args) {
+    // Connection connection = ConnectionFactory.getConnection();
+    // }
 
 }
